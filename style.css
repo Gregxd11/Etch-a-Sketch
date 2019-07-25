@@ -1,0 +1,13 @@
+#grid-container{
+    border: solid black 2px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.one-square-empty{
+    width: 23px; 
+    border: solid black 1px; 
+    height: 23px; 
+    background: white; 
+}
