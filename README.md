@@ -1,0 +1,1 @@
+Paint a picture with a 16x16 grid by mousing over squares!
