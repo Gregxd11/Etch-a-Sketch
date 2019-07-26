@@ -4,6 +4,7 @@
     height: 400px;
     display: flex;
     flex-wrap: wrap;
+    text-align: center
 }
 .one-square-empty{
     width: 23px; 

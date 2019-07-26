@@ -1,9 +1,6 @@
 let gridArea = 256
 
 makeGrid()
-whiteToBlack()
-
-
 function makeGrid(){
     for (i = 0; i < gridArea; i++){
         let oneSquare = document.createElement('div')
@@ -11,6 +8,7 @@ function makeGrid(){
         oneSquare.classList.add("one-square-empty")
         canvas.appendChild(oneSquare)
     }
+    whiteToBlack()
 }
 
 function whiteToBlack(){
@@ -19,6 +17,9 @@ function whiteToBlack(){
     for (let i = 0; i < emptySquareArr.length; i++){
         emptySquareArr[i].addEventListener("mouseover", function(){
             emptySquareArr[i].style.backgroundColor = 'black'
+        })
+        emptySquareArr[i].addEventListener("mousedown", function(){
+            emptySquareArr[i].style.backgroundColor = 'white'
         })
     }
 }
